@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<Context>  
+      <Resource name="jdbc/DB" auth="Container"   
+      type="javax.sql.DataSource"  
+      driverClassName="com.mysql.jdbc.Driver"  
+      url="jdbc:mysql://202.112.153.188:3306/web5"  
+      username="web5"  
+      password="123"  
+      maxActive="50"  
+      maxIdle="30"  
+      maxWait="10000" />  
+</Context>  

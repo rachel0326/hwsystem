@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>dosubmit</servlet-name>
+    <servlet-class>dosubmit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>unrar</servlet-name>
+    <servlet-class>unrar</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>check</servlet-name>
+    <servlet-class>check</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>docheck</servlet-name>
+    <servlet-class>docheck</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Addexcel</servlet-name>
+    <servlet-class>Addexcel</servlet-class>
+  </servlet>
+
+
+
+  <resource-ref>  
+    <description>mysqlDB Connection</description>  
+    <res-ref-name>jdbc/DB</res-ref-name>  
+    <res-type>javax.sql.DataSource</res-type>  
+    <res-auth>Container</res-auth>  
+</resource-ref>  
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>dosubmit</servlet-name>
+    <url-pattern>/servlet/dosubmit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>unrar</servlet-name>
+    <url-pattern>/servlet/unrar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>check</servlet-name>
+    <url-pattern>/servlet/check</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>docheck</servlet-name>
+    <url-pattern>/servlet/docheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Addexcel</servlet-name>
+    <url-pattern>/servlet/Addexcel</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>log.html</welcome-file>
+        <welcome-file>log.jsp</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>submit.html</welcome-file>
+  </welcome-file-list>
+</web-app>

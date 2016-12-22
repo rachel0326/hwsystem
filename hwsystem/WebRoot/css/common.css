@@ -1,0 +1,84 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #EAEAEA;
+	padding: 0;
+	overflow-y: scroll;
+}
+
+
+
+
+
+
+/* ~~ 标题未指定宽度。它将扩展到布局的完整宽度。标题包含一个图像占位符，该占位符应替换为您自己的链接徽标 ~~ */
+.header {
+	background: #EAEAEA;
+	margin:0 auto;
+	text-align: center;
+	height: 50pt;
+}
+
+
+
+.content {
+	background: #FFF;
+	width:940px;
+	float: left;
+	margin-top: 1px;
+}
+
+
+/* ~~ 脚注 ~~ */
+.footer {
+	padding: 10px 0;
+	background: #EAEAEA;
+	position: relative;/* 这可以使 IE6 hasLayout 以正确方式进行清除 */
+	clear: both; /* 此清除属性强制 .container 了解列的结束位置以及包含列的位置 */
+	font-size:10px;
+	color:gray;
+	text-align:center;
+	line-height:100%;
+	width:940px;
+}
+
+
+.firstTitle{
+	font-size: 30pt;
+	font-family:"Arial";
+	color:#7F7E7E;
+	height:40pt;
+	text-align:center;
+	font-weight:bold;
+	/*margin-top:20pt;*/
+}
+
+.user{
+	float:right !important;
+}
+
+
+.container{
+	width:940px !important ;
+}
+
+.navbar{
+	width:940px !important ;
+}
+
+.header{
+	width:940px !important ;
+}
+
+.nav li{
+	width:20% !important ;
+}
+
+.nav{
+	width:938px !important ;
+}
+.nav li a{
+	font-size: 14pt;
+}

@@ -12,6 +12,18 @@
 	<meta http-equiv="description" content="This is my page">
 	
 	<link rel="stylesheet" type="text/css" href="css/common.css">
+ <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+   function turnPage(url){
+    $.ajax({
+      type:"post",
+      url: url,
+      success:function(html){
+        $(".content").html(html);
+      }
+    })
+  }
+  </script>
   </head>
   <body>
    <div class="user">学号&nbsp姓名&nbsp欢迎您！&nbsp&nbsp<a href="log.html">注销</a></div>
@@ -22,12 +34,13 @@
       <!-- end .header --></div>
       <div class="sidebar1">
         <ul>
-          <li><a href="#" onClick="setOnConstruction('show')">展示作业</a></li>
-          <li><a href="#" onClick="setOnConstruction('show')">提交作业</a></li>
+          <li><a href="#" onClick="turnPage('show.html')">展示作业</a></li>
+          <li><a href="#" onClick="turnPage('submit.html')">提交作业</a></li>
           <li><a href="#" onClick="setOnConstruction('show')">布置作业</a></li>
         </ul>
       </div>
-      <iframe src="show.html" frameborder=0 scrolling=no width=830px height=830px></iframe>
+      <div class="content"></div>
+      <!--<iframe src="show.html" frameborder=0 scrolling=no width=830px height=830px></iframe>-->
       <div class="footer">made by zdy</div>
 
 </body>
